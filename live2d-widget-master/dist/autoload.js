@@ -49,15 +49,15 @@ function loadExternalResource(url, type) {
   // Load waifu.css and waifu-tips.js
   // 加载 waifu.css 和 waifu-tips.js
   await Promise.all([
-    loadExternalResource(live2d_path + 'waifu.css', 'css'),
-    loadExternalResource(live2d_path + 'waifu-tips.js', 'js')
+    loadExternalResource(/live2d-widget-master/dist/ + 'waifu.css', 'css'),
+    loadExternalResource(/live2d-widget-master/dist/ + 'waifu-tips.js', 'js')
   ]);
   // For detailed usage of configuration options, see README.en.md
   // 配置选项的具体用法见 README.md
   initWidget({
-    waifuPath: live2d_path + 'waifu-tips.json',
+    waifuPath: /live2d-widget-master/dist/ + 'waifu-tips.json',
     // cdnPath: 'https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/',
-    cubism2Path: live2d_path + 'live2d.min.js',
+    cubism2Path: /live2d-widget-master/dist/ + 'live2d.min.js',
     cubism5Path: 'https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js',
     tools: ['hitokoto', 'asteroids', 'switch-model', 'switch-texture', 'photo', 'info', 'quit'],
     logLevel: 'warn',
