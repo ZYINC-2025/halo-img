@@ -6,7 +6,7 @@
 // Recommended to use absolute path for live2d_path parameter
 // live2d_path 参数建议使用绝对路径
 //const live2d_path = 'https://imgedge.875949.xyz/live2d-widget-master/dist/';
-//  const live2d_path = '/live2d-widget-master/dist/';
+  const live2d_path = '/live2d-widget-master/dist/';
 
 // Method to encapsulate asynchronous resource loading
 // 封装异步加载资源的方法
